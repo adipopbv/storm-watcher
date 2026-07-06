@@ -1,0 +1,15 @@
+{
+  "solution": {
+    "path": "StormWatcher.slnx",
+    "projects": [
+      "src\\Shared\\StormWatcher.Contracts\\StormWatcher.Contracts.csproj",
+      "src\\Shared\\StormWatcher.ServiceDefaults\\StormWatcher.ServiceDefaults.csproj",
+      "src\\Detection\\StormWatcher.Detection.Domain\\StormWatcher.Detection.Domain.csproj",
+      "src\\Detection\\StormWatcher.Detection.Application\\StormWatcher.Detection.Application.csproj",
+      "src\\Detection\\StormWatcher.Detection.Infrastructure\\StormWatcher.Detection.Infrastructure.csproj",
+      "src\\Detection\\StormWatcher.Detection.Host\\StormWatcher.Detection.Host.csproj",
+      "tests\\Detection\\StormWatcher.Detection.UnitTests\\StormWatcher.Detection.UnitTests.csproj",
+      "tests\\Detection\\StormWatcher.Detection.IntegrationTests\\StormWatcher.Detection.IntegrationTests.csproj"
+    ]
+  }
+}

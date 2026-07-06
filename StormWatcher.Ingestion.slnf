@@ -1,0 +1,18 @@
+{
+  "solution": {
+    "path": "StormWatcher.slnx",
+    "projects": [
+      "src\\Shared\\StormWatcher.Contracts\\StormWatcher.Contracts.csproj",
+      "src\\Shared\\StormWatcher.ServiceDefaults\\StormWatcher.ServiceDefaults.csproj",
+      "src\\Ingestion\\StormWatcher.Ingestion.Domain\\StormWatcher.Ingestion.Domain.csproj",
+      "src\\Ingestion\\StormWatcher.Ingestion.Application\\StormWatcher.Ingestion.Application.csproj",
+      "src\\Ingestion\\StormWatcher.Ingestion.Infrastructure\\StormWatcher.Ingestion.Infrastructure.csproj",
+      "src\\Ingestion\\StormWatcher.Ingestion.Scheduling\\StormWatcher.Ingestion.Scheduling.csproj",
+      "src\\Ingestion\\StormWatcher.Ingestion.SchedulerHost\\StormWatcher.Ingestion.SchedulerHost.csproj",
+      "src\\Ingestion\\StormWatcher.Ingestion.WorkerHost\\StormWatcher.Ingestion.WorkerHost.csproj",
+      "src\\Ingestion\\StormWatcher.Ingestion.LocalSchedulerHost\\StormWatcher.Ingestion.LocalSchedulerHost.csproj",
+      "tests\\Ingestion\\StormWatcher.Ingestion.UnitTests\\StormWatcher.Ingestion.UnitTests.csproj",
+      "tests\\Ingestion\\StormWatcher.Ingestion.IntegrationTests\\StormWatcher.Ingestion.IntegrationTests.csproj"
+    ]
+  }
+}

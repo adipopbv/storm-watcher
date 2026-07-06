@@ -1,0 +1,57 @@
+<Solution>
+  <Folder Name="/src/" />
+    <Folder Name="/src/Ingestion/">
+      <Project Path="src/Ingestion/StormWatcher.Ingestion.Domain/StormWatcher.Ingestion.Domain.csproj" />
+      <Project Path="src/Ingestion/StormWatcher.Ingestion.Application/StormWatcher.Ingestion.Application.csproj" />
+      <Project Path="src/Ingestion/StormWatcher.Ingestion.Infrastructure/StormWatcher.Ingestion.Infrastructure.csproj" />
+      <Project Path="src/Ingestion/StormWatcher.Ingestion.SchedulerHost/StormWatcher.Ingestion.SchedulerHost.csproj" />
+      <Project Path="src/Ingestion/StormWatcher.Ingestion.Scheduling/StormWatcher.Ingestion.Scheduling.csproj" />
+      <Project Path="src/Ingestion/StormWatcher.Ingestion.WorkerHost/StormWatcher.Ingestion.WorkerHost.csproj" />
+      <Project Path="src/Ingestion/StormWatcher.Ingestion.LocalSchedulerHost/StormWatcher.Ingestion.LocalSchedulerHost.csproj" />
+    </Folder>
+    <Folder Name="/src/Detection/">
+      <Project Path="src/Detection/StormWatcher.Detection.Domain/StormWatcher.Detection.Domain.csproj" />
+      <Project Path="src/Detection/StormWatcher.Detection.Application/StormWatcher.Detection.Application.csproj" />
+      <Project Path="src/Detection/StormWatcher.Detection.Infrastructure/StormWatcher.Detection.Infrastructure.csproj" />
+      <Project Path="src/Detection/StormWatcher.Detection.Host/StormWatcher.Detection.Host.csproj" />
+    </Folder>
+    <Folder Name="/src/LocationCatalog/">
+      <Project Path="src/LocationCatalog/StormWatcher.LocationCatalog.Domain/StormWatcher.LocationCatalog.Domain.csproj" />
+      <Project Path="src/LocationCatalog/StormWatcher.LocationCatalog.Application/StormWatcher.LocationCatalog.Application.csproj" />
+      <Project Path="src/LocationCatalog/StormWatcher.LocationCatalog.Infrastructure/StormWatcher.LocationCatalog.Infrastructure.csproj" />
+      <Project Path="src/LocationCatalog/StormWatcher.LocationCatalog.Host/StormWatcher.LocationCatalog.Host.csproj" />
+    </Folder>
+    <Folder Name="/src/Notification/">
+      <Project Path="src/Notification/StormWatcher.Notification.Domain/StormWatcher.Notification.Domain.csproj" />
+      <Project Path="src/Notification/StormWatcher.Notification.Application/StormWatcher.Notification.Application.csproj" />
+      <Project Path="src/Notification/StormWatcher.Notification.Infrastructure/StormWatcher.Notification.Infrastructure.csproj" />
+      <Project Path="src/Notification/StormWatcher.Notification.Host/StormWatcher.Notification.Host.csproj" />
+    </Folder>
+    <Folder Name="/src/Shared/">
+      <Project Path="src/Shared/StormWatcher.Contracts/StormWatcher.Contracts.csproj" />
+      <Project Path="src/Shared/StormWatcher.ServiceDefaults/StormWatcher.ServiceDefaults.csproj" />
+    </Folder>
+  <Folder Name="/tests/" />
+    <Folder Name="/tests/Ingestion/">
+      <Project Path="tests/Ingestion/StormWatcher.Ingestion.UnitTests/StormWatcher.Ingestion.UnitTests.csproj" />
+      <Project Path="tests/Ingestion/StormWatcher.Ingestion.IntegrationTests/StormWatcher.Ingestion.IntegrationTests.csproj" />
+    </Folder>
+    <Folder Name="/tests/Detection/">
+      <Project Path="tests/Detection/StormWatcher.Detection.UnitTests/StormWatcher.Detection.UnitTests.csproj" />
+      <Project Path="tests/Detection/StormWatcher.Detection.IntegrationTests/StormWatcher.Detection.IntegrationTests.csproj" />
+    </Folder>
+    <Folder Name="/tests/LocationCatalog/">
+      <Project Path="tests/LocationCatalog/StormWatcher.LocationCatalog.UnitTests/StormWatcher.LocationCatalog.UnitTests.csproj" />
+      <Project Path="tests/LocationCatalog/StormWatcher.LocationCatalog.IntegrationTests/StormWatcher.LocationCatalog.IntegrationTests.csproj" />
+    </Folder>
+    <Folder Name="/tests/Notification/">
+      <Project Path="tests/Notification/StormWatcher.Notification.UnitTests/StormWatcher.Notification.UnitTests.csproj" />
+      <Project Path="tests/Notification/StormWatcher.Notification.IntegrationTests/StormWatcher.Notification.IntegrationTests.csproj" />
+    </Folder>
+  <Folder Name="/aspire/">
+    <Project Path="aspire/StormWatcher.AppHost/StormWatcher.AppHost.csproj" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="docs/weather-anomaly-platform-context.md" />
+  </Folder>
+</Solution>

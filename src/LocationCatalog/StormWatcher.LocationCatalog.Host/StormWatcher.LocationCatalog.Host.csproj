@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <ItemGroup>
+    <ProjectReference Include="..\StormWatcher.LocationCatalog.Infrastructure\StormWatcher.LocationCatalog.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Shared\StormWatcher.ServiceDefaults\StormWatcher.ServiceDefaults.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+</Project>

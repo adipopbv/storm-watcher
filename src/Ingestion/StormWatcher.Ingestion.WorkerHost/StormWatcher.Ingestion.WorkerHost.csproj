@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-StormWatcher.Ingestion.WorkerHost-1970adb7-d20f-47d4-8d79-131c0af4e904</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StormWatcher.Ingestion.Infrastructure\StormWatcher.Ingestion.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Shared\StormWatcher.ServiceDefaults\StormWatcher.ServiceDefaults.csproj" />
+  </ItemGroup>
+</Project>

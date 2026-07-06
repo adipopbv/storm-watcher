@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-StormWatcher.Notification.Host-1420c0ee-0b71-4b50-92e6-15ddb606c9b0</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StormWatcher.Notification.Infrastructure\StormWatcher.Notification.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Shared\StormWatcher.ServiceDefaults\StormWatcher.ServiceDefaults.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,35 @@
+# Auto-detect text files, normalize line endings to LF in the repository
+* text=auto eol=lf
+
+# Explicit text types
+*.cs text diff=csharp
+*.csproj text
+*.props text
+*.targets text
+*.sln text
+*.slnx text
+*.slnf text
+*.json text
+*.md text
+*.yml text
+*.yaml text
+*.config text
+*.editorconfig text
+
+# Windows-only scripts keep CRLF
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binary types - never diff/merge
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.dll binary
+*.exe binary
+*.pdb binary
+
+# Documentation, excluded from GitHub language statistics
+docs/** linguist-documentation
