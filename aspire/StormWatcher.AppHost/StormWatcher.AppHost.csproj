@@ -5,7 +5,7 @@
     <ProjectReference Include="..\..\src\Detection\StormWatcher.Detection.Host\StormWatcher.Detection.Host.csproj" />
     <ProjectReference Include="..\..\src\LocationCatalog\StormWatcher.LocationCatalog.Host\StormWatcher.LocationCatalog.Host.csproj" />
     <ProjectReference Include="..\..\src\Notification\StormWatcher.Notification.Host\StormWatcher.Notification.Host.csproj" />
-    <ProjectReference Include="..\..\src\Ingestion\StormWatcher.Ingestion.LocalSchedulerHost\StormWatcher.Ingestion.LocalSchedulerHost.csproj" />
+    <ProjectReference Include="..\..\src\Ingestion\StormWatcher.Ingestion.SchedulerHost.Local\StormWatcher.Ingestion.SchedulerHost.Local.csproj" />
   </ItemGroup>
 
   <ItemGroup>
