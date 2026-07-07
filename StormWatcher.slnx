@@ -52,6 +52,7 @@
     <Project Path="aspire/StormWatcher.AppHost/StormWatcher.AppHost.csproj" />
   </Folder>
   <Folder Name="/Solution Items/">
+    <File Path="docs/folder-structure-reference.md" />
     <File Path="docs/weather-anomaly-platform-context.md" />
   </Folder>
 </Solution>
