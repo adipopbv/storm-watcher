@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using StormWatcher.Ingestion.Scheduling;
 
@@ -7,7 +7,6 @@ var builder = Host.CreateApplicationBuilder(args);
 builder.AddServiceDefaults();
 builder.Services.AddIngestionApplication();
 builder.Services.AddIngestionInfrastructure(builder.Configuration);
-builder.Services.AddIngestionScheduling();
 
 using var host = builder.Build();
 await host.StartAsync();
