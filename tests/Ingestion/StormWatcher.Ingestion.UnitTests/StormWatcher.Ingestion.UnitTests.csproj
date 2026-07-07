@@ -21,7 +21,6 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\src\Ingestion\StormWatcher.Ingestion.Domain\StormWatcher.Ingestion.Domain.csproj" />
     <ProjectReference Include="..\..\..\src\Ingestion\StormWatcher.Ingestion.Application\StormWatcher.Ingestion.Application.csproj" />
-    <ProjectReference Include="..\..\..\src\Ingestion\StormWatcher.Ingestion.Scheduling\StormWatcher.Ingestion.Scheduling.csproj" />
   </ItemGroup>
 
 </Project>

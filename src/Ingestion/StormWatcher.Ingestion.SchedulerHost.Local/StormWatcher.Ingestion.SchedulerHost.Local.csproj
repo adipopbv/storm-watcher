@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\StormWatcher.Ingestion.Scheduling\StormWatcher.Ingestion.Scheduling.csproj" />
     <ProjectReference Include="..\StormWatcher.Ingestion.Infrastructure\StormWatcher.Ingestion.Infrastructure.csproj" />
     <ProjectReference Include="..\..\Shared\StormWatcher.ServiceDefaults\StormWatcher.ServiceDefaults.csproj" />
   </ItemGroup>
