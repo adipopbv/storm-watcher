@@ -6,6 +6,11 @@ on:
   pull_request:
     branches: [main]
 
+env:
+  SONAR_PROJECT_KEY: adipopbv_storm-watcher
+  SONAR_ORG: adipopbv
+  SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
@@ -13,24 +18,47 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # required by SonarCloud for blame & new-code detection
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '10.0.x'
 
+      - name: Install SonarCloud scanner
+        run: dotnet tool install --global dotnet-sonarscanner
+
+      - name: Install dotnet-coverage
+        run: dotnet tool install --global dotnet-coverage
+
       - name: Restore
         run: dotnet restore StormWatcher.slnx
+
+      - name: SonarCloud begin
+        run: |
+          dotnet sonarscanner begin \
+            /k:"$SONAR_PROJECT_KEY" \
+            /o:"$SONAR_ORG" \
+            /d:sonar.token="$SONAR_TOKEN" \
+            /d:sonar.host.url="https://sonarcloud.io" \
+            /d:sonar.cs.vscoveragexml.reportsPaths=coverage.xml
 
       - name: Build
         run: dotnet build StormWatcher.slnx --configuration Release --no-restore
 
-      - name: Test
-        run: dotnet test StormWatcher.slnx --configuration Release --no-build --logger "trx;LogFileName=test-results.trx"
+      - name: Test with coverage
+        run: |
+          dotnet-coverage collect \
+            "dotnet test StormWatcher.slnx --configuration Release --no-build --logger trx" \
+            -f xml -o coverage.xml
+
+      - name: SonarCloud end
+        run: dotnet sonarscanner end /d:sonar.token="$SONAR_TOKEN"
 
       - name: Publish test results
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: test-results
-          path: '**/test-results.trx'
+          path: '**/*.trx'

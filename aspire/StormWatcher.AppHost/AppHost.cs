@@ -16,7 +16,7 @@ var ingestionWorker = builder.AddProject<Projects.StormWatcher_Ingestion_WorkerH
     .WaitFor(stormwatcherDb)
     .WaitFor(rabbitmq);
 
-var ingestionLocalScheduler = builder.AddProject<Projects.StormWatcher_Ingestion_LocalSchedulerHost>("ingestion-local-scheduler")
+var ingestionLocalScheduler = builder.AddProject<Projects.StormWatcher_Ingestion_SchedulerHost_Local>("ingestion-local-scheduler")
     .WithReference(stormwatcherDb)
     .WithReference(rabbitmq)
     .WaitFor(stormwatcherDb)
@@ -41,4 +41,4 @@ builder.AddProject<Projects.StormWatcher_Notification_Host>("notification")
     .WaitFor(rabbitmq)
     .WithReference(locationCatalog); // sync LocationId -> ntfy topic lookup, §3.4
 
-builder.Build().Run();
+await builder.Build().RunAsync();
